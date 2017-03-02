@@ -28,3 +28,6 @@ Route::post('/clientes','ClienteController@armazena');
 //IMOVELS
 //adiciona rota para url '/imovels'
 Route::get('/imovels','ImovelController@index');
+
+//adiciona rota para url '/imovels/cria'
+Route::get('/imovels/cria','ImovelController@cria');

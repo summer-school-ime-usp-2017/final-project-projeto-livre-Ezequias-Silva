@@ -11,4 +11,8 @@ class ImovelController extends Controller
       $imovels = Imovel::all();
       return view('imovel.index',compact('imovels'));
     }
+
+    public function cria(){
+      return view('imovel.cria');
+    }
 }
