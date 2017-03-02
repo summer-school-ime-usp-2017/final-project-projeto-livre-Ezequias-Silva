@@ -17,3 +17,9 @@ Route::get('/', function () {
 
 //adiciona rota para url '/clientes'
 Route::get('/clientes', 'ClienteController@index');
+
+//adiciona rota para url '/clientes/cria'
+Route::get('/clientes/cria','ClienteController@cria');
+
+//adiciona rota para url '/clientes/armazena'
+Route::post('/clientes','ClienteController@armazena');
