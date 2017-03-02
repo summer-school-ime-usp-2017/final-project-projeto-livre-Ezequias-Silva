@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+//CLIENTES
 //adiciona rota para url '/clientes'
 Route::get('/clientes', 'ClienteController@index');
 
@@ -23,3 +23,8 @@ Route::get('/clientes/cria','ClienteController@cria');
 
 //adiciona rota para url '/clientes/armazena'
 Route::post('/clientes','ClienteController@armazena');
+
+
+//IMOVELS
+//adiciona rota para url '/imovels'
+Route::get('/imovels','ImovelController@index');
