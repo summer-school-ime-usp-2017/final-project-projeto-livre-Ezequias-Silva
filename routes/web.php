@@ -31,3 +31,6 @@ Route::get('/imovels','ImovelController@index');
 
 //adiciona rota para url '/imovels/cria'
 Route::get('/imovels/cria','ImovelController@cria');
+
+//adiciona rota para url '/imovels' para armazenar informações
+Route::post('/imovels','ImovelController@armazena');

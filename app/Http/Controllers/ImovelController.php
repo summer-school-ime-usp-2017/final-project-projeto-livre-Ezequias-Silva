@@ -15,4 +15,9 @@ class ImovelController extends Controller
     public function cria(){
       return view('imovel.cria');
     }
+
+    public function armazena(){
+      Imovel::create(request()->all());
+      return redirect('/imovels');
+    }
 }
