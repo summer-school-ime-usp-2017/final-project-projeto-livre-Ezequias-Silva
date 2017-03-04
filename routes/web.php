@@ -38,5 +38,8 @@ Route::post('/imovels','ImovelController@armazena');
 //adiciona rota para url '/reservas'
 Route::get('/reservas','ReservaController@index');
 
+//adiciona rota para url '/reserva/cria'
+Route::get('/reservas/cria','ReservaController@cria');
+
 //adiciona rota para url /reservas/1 por exemplo
 Route::get('/reservas/{reserva}','ReservaController@show');

@@ -17,4 +17,18 @@ class ReservaController extends Controller
     public function show(Reserva $reserva){
       return view('reserva.show',compact('reserva'));
     }
+
+    public function cria(){
+      $clientes = Cliente::all();
+      $imovels = Imovel::all();
+      return view('reserva.cria',compact('clientes','imovels'));
+    }
+
 }
+
+
+//
+// public function cria(){
+//       $editoras = Editora::all();
+//       return view('livro.cria',compact('editoras'));
+//     }
