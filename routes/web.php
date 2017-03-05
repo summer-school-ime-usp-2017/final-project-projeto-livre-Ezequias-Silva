@@ -37,8 +37,12 @@ Route::post('/imovels','ImovelController@armazena');
 
 
 //CATEGORIA
-//adiciona rota para url '/categias'
+//adiciona rota para url '/categorias'
 Route::get('/categorias','CategoriaController@index');
+
+//adiciona rota para url '/categorias/cria'
+Route::get('/categorias/cria','CategoriaController@cria');
+
 
 //RESERVAS
 //adiciona rota para url '/reservas'
