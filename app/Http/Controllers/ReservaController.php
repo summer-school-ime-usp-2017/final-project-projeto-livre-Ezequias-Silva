@@ -24,11 +24,9 @@ class ReservaController extends Controller
       return view('reserva.cria',compact('clientes','imovels'));
     }
 
+    public function armazena(){
+      Reserva::create(request()->all());
+      return redirect('/reservas');
+    }
+
 }
-
-
-//
-// public function cria(){
-//       $editoras = Editora::all();
-//       return view('livro.cria',compact('editoras'));
-//     }
