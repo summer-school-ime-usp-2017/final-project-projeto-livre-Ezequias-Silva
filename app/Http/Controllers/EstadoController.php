@@ -15,4 +15,9 @@ class EstadoController extends Controller
     public function cria(){
       return view('estado.cria');
     }
+
+    public function armazena(){
+      Estado::create(request()->all());
+      return redirect('/estados');
+    }
 }

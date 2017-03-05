@@ -54,6 +54,9 @@ Route::get('/estados','EstadoController@index');
 //adiciona rota para url '/estados/cria'
 Route::get('/estados/cria','EstadoController@cria');
 
+//adiciona rota para armazenar informações no banco
+Route::post('/estados','EstadoController@armazena');
+
 
 //RESERVAS
 //adiciona rota para url '/reservas'
