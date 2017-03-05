@@ -47,6 +47,11 @@ Route::get('/categorias/cria','CategoriaController@cria');
 Route::post('/categorias','CategoriaController@armazena');
 
 
+//ESTADOS
+//adiciona rota para url '/estados'
+Route::get('/estados','EstadoController@index');
+
+
 //RESERVAS
 //adiciona rota para url '/reservas'
 Route::get('/reservas','ReservaController@index');
