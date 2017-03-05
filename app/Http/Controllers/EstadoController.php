@@ -11,4 +11,8 @@ class EstadoController extends Controller
       $estados = Estado::all();
       return view('estado.index',compact('estados'));
     }
+
+    public function cria(){
+      return view('estado.cria');
+    }
 }

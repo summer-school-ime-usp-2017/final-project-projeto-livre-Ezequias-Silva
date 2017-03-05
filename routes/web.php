@@ -51,6 +51,9 @@ Route::post('/categorias','CategoriaController@armazena');
 //adiciona rota para url '/estados'
 Route::get('/estados','EstadoController@index');
 
+//adiciona rota para url '/estados/cria'
+Route::get('/estados/cria','EstadoController@cria');
+
 
 //RESERVAS
 //adiciona rota para url '/reservas'
