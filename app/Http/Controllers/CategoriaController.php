@@ -15,4 +15,9 @@ class CategoriaController extends Controller
     public function cria(){
       return view('categoria.cria');
     }
+
+    public function armazena(){
+      Categoria::create(request()->all());
+      return redirect('/categorias');
+    }
 }

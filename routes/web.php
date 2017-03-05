@@ -43,6 +43,9 @@ Route::get('/categorias','CategoriaController@index');
 //adiciona rota para url '/categorias/cria'
 Route::get('/categorias/cria','CategoriaController@cria');
 
+//adiciona rota para armazenar informações no banco
+Route::post('/categorias','CategoriaController@armazena');
+
 
 //RESERVAS
 //adiciona rota para url '/reservas'
